@@ -11,9 +11,9 @@ const Modal: React.FC<ModalProps> = ({ tool }) => {
   const closeModal = useStore((state) => state.closeModal);
 
   return (
-    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 animate-fade-in">
-      <div className="bg-[#0F111A]/90 rounded-2xl p-8 max-w-xl w-full mx-4 border border-white/10 shadow-2xl shadow-purple-500/10">
-        <div className="flex items-center justify-between mb-8">
+    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 animate-fade-in p-4">
+      <div className="bg-[#0F111A]/90 rounded-2xl p-4 sm:p-8 w-full max-w-xl mx-auto border border-white/10 shadow-2xl shadow-purple-500/10">
+        <div className="flex items-center justify-between mb-6 sm:mb-8">
           <h2 className="text-xl font-semibold bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
             {tool.name}
           </h2>

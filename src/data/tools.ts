@@ -13,7 +13,8 @@ import {
   CheckSquare as TaskIcon,
   Timer as FocusIcon,
   Cloud as WeatherIcon,
-  Calculator as CalculatorIcon
+  Calculator as CalculatorIcon,
+  StickyNote as NotesIcon
 } from 'lucide-react';
 
 import Timer from '../components/tools/Timer';
@@ -31,6 +32,8 @@ import Goals from '../components/tools/Goals';
 import DailyQuotes from '../components/tools/DailyQuotes';
 import TaskManager from '../components/tools/TaskManager';
 import FocusMusic from '../components/tools/FocusMusic';
+import QuickNotes from '../components/tools/QuickNotes';
+import Meditation from '../components/tools/Meditation';
 
 export const tools = [
   {
@@ -64,6 +67,16 @@ export const tools = [
     component: Timer
   },
   {
+    id: 'notes',
+    name: 'Quick Notes',
+    description: 'Capture thoughts quickly',
+    icon: NotesIcon,
+    color: 'from-[#3D3A2A] to-[#2D2B1F]',
+    iconColor: 'text-yellow-500',
+    category: 'Productivity',
+    component: QuickNotes
+  },
+  {
     id: 'planner',
     name: 'Daily Planner',
     description: 'Plan your day',
@@ -72,6 +85,16 @@ export const tools = [
     iconColor: 'text-blue-500',
     category: 'Time Management',
     component: DailyPlanner
+  },
+  {
+    id: 'meditation',
+    name: 'Meditation',
+    description: 'Guided meditation',
+    icon: BreathingIcon,
+    color: 'from-[#2D2A3D] to-[#211F2D]',
+    iconColor: 'text-purple-500',
+    category: 'Wellness',
+    component: Meditation
   },
   {
     id: 'weather',
